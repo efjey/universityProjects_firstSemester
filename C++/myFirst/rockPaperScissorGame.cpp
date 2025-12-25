@@ -7,6 +7,10 @@
 using namespace std;
 
 int main() {
+    char run;
+
+    do {
+
     // I searched this part so i don't know how exactly this work but this will make it random
     srand(time(0));
 
@@ -43,9 +47,16 @@ int main() {
         ) { cout << "\n***** YOU WINNN *****";}
     else { cout << "\n***** OOOPS YOU LOSE ******";}
 
+    cout << "\nDo you want to continue? y/n ";
+    cin >> run;
+
+
+    } while (run == 'y' );
+    cout << "---- GOODBYEE -----";
+
     return 0;
 
     }
-// i could use loops to make it continue but idk how to use while and other loops so we will forget it
+
 // thanx for your time <3
 
